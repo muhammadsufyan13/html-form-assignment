@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Assignment</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form>
+
+    
+    <fieldset>
+        <legend>Bio Data</legend>
+
+        
+        <label>Name:</label><br>
+        <input type="text" name="name" required>
+        <br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password" minlength="5" maxlength="10" required>
+        <br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob" required>
+        <br><br>
+
+        <label>Profile Picture:</label><br>
+        <input type="file" name="profilePic">
+        <br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        <label>Nationality:</label><br>
+        <select name="nationality" required>
+            <option value="">Select</option>
+            <option value="pakistani">Pakistani</option>
+            <option value="indian">Indian</option>
+            <option value="american">American</option>
+        </select>
+        <br><br>
+
+        <label>City:</label><br>
+        <select name="city" required>
+            <option value="">Select</option>
+            <option value="karachi">Karachi</option>
+            <option value="lahore">Lahore</option>
+            <option value="islamabad">Islamabad</option>
+        </select>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Professional Experience</legend>
+
+        <label>Total Professional Experience (Years):</label><br>
+        <input type="number" name="experience" min="5" required>
+        <br><br>
+
+        <label>Qualification:</label><br>
+        <select name="qualification" required>
+            <option value="">Select</option>
+            <option value="matric">Matric</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="bachelors">Bachelors</option>
+            <option value="masters">Masters</option>
+        </select>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Other Details</legend>
+
+        <label>Favorite Subjects:</label><br>
+        <select name="subjects" multiple required>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="english">English</option>
+            <option value="computer">Computer</option>
+        </select>
+
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
