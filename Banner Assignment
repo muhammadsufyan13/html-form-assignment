@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+
+    <!-- LINK CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <!-- LEFT: LOGO -->
+        <div class="logo">MyLogo</div>
+
+        <!-- CENTER: NAV LINKS -->
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- RIGHT: AVATAR -->
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="avatar">
+
+    </nav>
+
+    <!-- BANNER -->
+    <div class="banner">
+        <img src="https://via.placeholder.com/1200x300" alt="Banner">
+    </div>
+
+    <!-- PAGE HEADING -->
+    <h1 class="page-heading">Current Page Heading</h1>
+
+</body>
+</html>
+
+
+
+
+
+
+
+CSS:
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border: 2px solid black;
+}
+
+/* LOGO */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: blue;
+}
+
+/* AVATAR */
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+/* BANNER */
+.banner {
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* HEADING */
+.page-heading {
+    margin: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
